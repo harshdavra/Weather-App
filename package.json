@@ -1,0 +1,22 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "concurrently \"php artisan serve --host=0.0.0.0 --port=8000\" \"npm run build\""
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.7.4",
+        "concurrently": "^9.1.2",
+        "laravel-vite-plugin": "^1.2.0",
+        "postcss": "^8.4.47",
+        "tailwindcss": "^3.4.13",
+        "vite": "^6.2.2"
+    },
+    "dependencies": {
+        "laravel-vite": "^0.0.24",
+        "plugin": "^0.0.15",
+        "vercel-php": "^0.7.3"
+    }
+}
