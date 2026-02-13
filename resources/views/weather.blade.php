@@ -38,6 +38,7 @@
    
             
                 <form action="{{ url('/searchCity') }}" method="GET" onsubmit="showLoading()">
+                     @csrf
                     <div class="input">
                             <input type="search" id="cityinput" placeholder="Search places" name="city" onkeyup="searchcity()" value="{{ session('searched_city') }}">
                             <button type="submit" class="search-icon">🔍</button>
